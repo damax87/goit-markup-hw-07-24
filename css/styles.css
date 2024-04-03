@@ -116,12 +116,6 @@ address {
     align-items: center;
 }
 
-.header-nav__navigation {
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
-}
-
 .logo {
     font-family: 'Raleway';
     font-size: 26px;
@@ -136,6 +130,14 @@ address {
 .logo__studio {
     color: #000000;
 }
+
+.header-nav__navigation {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+
 
 .header-nav__link {
     display: block;
@@ -179,10 +181,6 @@ address {
     margin-left: auto;
 }
 
-.header-nav__icon {
-    margin-right: 10px;
-}
-
 .header-nav__contacts--item {
     display: inline-flex;
     align-items: center;
@@ -205,6 +203,10 @@ address {
 .header-nav__contacts--item:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+}
+
+.header-nav__icon {
+    margin-right: 10px;
 }
 
 /* STUDIO PAGE */
@@ -790,7 +792,7 @@ address {
     text-decoration: underline;
 }
 
-.input__button {
+.submit__button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;

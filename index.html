@@ -12,7 +12,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
      />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 <body>
 <!--Header-->
@@ -356,7 +357,7 @@
             <strong class="follow__title">SUBSCRIBE TO THE NEWSLETTER</strong>
             <form class="subscribe__form">
                 <label for="user-email">
-                  <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required />
+                  <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required autocomplete="on" />
                 </label>
                 <button class="subscribe__button" type="submit">Subscribe
                     <svg class="send__icon" width="24" height="24">
@@ -376,12 +377,12 @@
                 </svg>
             </button>
             <p class="modal__title">Leave your details, we will call you back</p>
-            <form class="client__form" name="client-form" autocomplete="off">
+            <form class="client__form" name="client-form">
             <div class="form__field">
                 <label class="label__title" for="name">
                   Name
                 </label>
-                <input class="form__input" type="text" name="name" id="name" required />
+                <input class="form__input" type="text" name="name" id="name" required autocomplete="off" />
                 <svg class="new-client__icon" width="12" height="12">
                     <use href="./images/icons.svg#clientNameIcon"></use>
                 </svg>
@@ -390,7 +391,7 @@
                 <label class="label__title" for="phone">
                   Phone number  
                 </label>
-                <input class="form__input" type="tel" name="phone" id="phone" required />
+                <input class="form__input" type="tel" name="phone" id="phone" required autocomplete="off" />
                 <svg class="new-client__icon" width="13" height="13">
                     <use href="./images/icons.svg#clientPhoneIcon"></use>
                 </svg>
@@ -399,7 +400,7 @@
                 <label class="label__title" for="email">
                   Email
                 </label>
-                <input class="form__input" type="email" name="email" id="email" required />
+                <input class="form__input" type="email" name="email" id="email" required autocomplete="off" />
                 <svg class="new-client__icon" width="15" height="12">
                     <use href="./images/icons.svg#clientMailIcon"></use>
                 </svg>
@@ -418,7 +419,7 @@
                 </svg>
                 I agree and accept<a href=""><span class="text__agreement">The terms of the agreement</span></a>
                 </label>
-                <button class="input__button" type="submit">Submit</button>
+                <button class="submit__button" type="submit">Submit</button>
               </form>
         </div>
     </div>

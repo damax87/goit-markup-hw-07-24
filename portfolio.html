@@ -12,7 +12,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 </head>
 <body>
 <!--Header-->
@@ -45,7 +46,7 @@
 <!-- Main -->
         <main class="container">
     <!-- Buttons list -->
-    <section class="section no-padding-bottom">
+    <section class="section">
     <ul class="buttons__list">
         <li>
             <button class="buttons__item" type="button">All</button>
@@ -194,7 +195,7 @@
             <strong class="follow__title">SUBSCRIBE TO THE NEWSLETTER</strong>
             <form class="subscribe__form">
                 <label for="user-email">
-                  <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required />
+                  <input id="user-email" class="subscribre__input" type="email" name="email" placeholder="E-mail" required autocomplete="off"/>
                 </label>
                 <button class="subscribe__button" type="submit">Subscribe
                     <svg class="send__icon" width="24" height="24">
